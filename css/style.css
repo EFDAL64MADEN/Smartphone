@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/fond.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.app{
+    width: 9px;
+    height: 9px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-right: 13px;
+}
+
+.hp{
+    width: 50px;
+    height: 8px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.ecran{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 700px;
+    width: 400px;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transition: 1s;
+}
+
+.notif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#heure{
+    color: white;
+    padding-right: 200px;
+}
+
+.fa-bluetooth-b{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa-signal{
+    padding-right: 10px;
+}
+
+.pourcent{
+    color: white;
+    padding-right: 10px;
+}
+
+.heure{
+    color: #fff;
+    font-size: 30px;
+    visibility: hidden;
+    transition: 1s;
+    margin-top: 30px;
+    text-shadow: black 1px 0 10px;
+}
+
+.date{
+    color: #fff;
+    font-size: 20px;
+    visibility: hidden;
+    transition: 1s;
+    margin-bottom: 70px;
+    text-shadow: black 1px 0 10px;
+}
+
+.meteo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+    width: 100px;
+    height: 80px;
+}
+
+.meteoo{
+    text-shadow: black 1px 0 10px;
+}
+
+img{
+    width: 75px;
+    height: 75px;
+}
+
+.brg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 30px;
+    background-color: rgba(196, 194, 194, 0.5);
+    border-radius: 50px;
+    visibility: hidden;
+    margin-top: 110px;
+}
+
+.google{
+    padding-right: 30px;
+}
+
+.recherche{
+    padding-right: 160px;
+}
+
+.ligne1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    height: 100px;
+    visibility: hidden;
+    padding-top: 20px;
+}
+
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: purple;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.calendrier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: green;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.horloge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.ligne2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    height: 100px;
+    visibility: hidden;
+    margin-top: 30px;
+}
+
+.tel, .msg, .ap, .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+}
+
+i{
+    color: white;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.cercle{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.bouton:hover{
+    cursor: pointer;
+}
+
+.active.ecran{
+    background: url("../img/naruto.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.active .notif, .active .heure, .active .date, .active .meteo, .active .brg, .active .ligne1, .active .ligne2{
+    visibility: visible;
+}
+
+.store:hover, .mail:hover, .calendrier:hover, .horloge:hover,.tel:hover, .msg:hover, .ap:hover, .photo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
